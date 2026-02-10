@@ -970,6 +970,7 @@ full_treble_only(`
     coredomain
     -shell
     userdebug_or_eng(`-su')
+    -system_server
     -ueventd # uevent is granted create for this device, but we still neverallow I/O below
   } vndbinder_device:chr_file rw_file_perms;
 ')
